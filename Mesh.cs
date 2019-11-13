@@ -721,69 +721,6 @@ namespace MeshDrawingWPF
 				hatch.StrokeThickness = 1;
 				canvas.Children.Add(hatch);
 			}
-
-
-			////рисование сетки
-			//List<Tuple<int, int>> areaswithcolor = new List<Tuple<int, int>>(); //номер подобласти, номер цвета
-			////каждой области присвоить свой цвет
-			//for (int i = 0; i < fes.Count(); i++)
-			//{
-			//	//найти номер цвета для данной области
-			//	Tuple<int, int> index = areaswithcolor.Find(x => x.Item1 == fes[i].area);
-			//	if (index == null)
-			//	{
-			//		//отметить, что этой области принадлежит данный цвет
-			//		areaswithcolor.Add(new Tuple<int, int>(fes[i].area, areaswithcolor.Count()));
-			//	}
-			//}
-
-			//for (int i = 0; i < fesSection.Count(); i++)
-			//{
-			//	Point[] rect = new Point[4];
-			//	PointCollection fesPoints = new PointCollection();	//коллекция точек для полигона
-			//	for (int j = 0; j < 4; j++)
-			//	{
-			//		rect[j].X = (float)(fesSection[i].vertexs[j].x / xh)*zoom+shift.X + screenX0;
-			//		rect[j].Y = screenHeight - (float)(fesSection[i].vertexs[j].y / yh)*zoom+shift.Y - screenY0;
-
-   //                 fesPoints.Add(rect[j]);
-			//	}
-			//	if (fesSection[i].area != -1)
-			//	{
-			//		//различать области по цветам
-			//		if (differArea)
-			//		{
-			//			//найти номер цвета для данной области
-			//			Tuple<int, int> index = areaswithcolor.Find(x => x.Item1 == fesSection[i].area);
-			//				Polygon fes1 = new Polygon();
-			//				fes1.Stroke = System.Windows.Media.Brushes.Black;
-			//				fes1.Fill = areaColors[index.Item2];
-			//				fes1.StrokeThickness = 2;
-			//				fes1.Points = fesPoints;
-			//				canvas.Children.Add(fes1);
-			//		}
-
-			//		Polygon fes = new Polygon();
-			//		fes.Stroke = System.Windows.Media.Brushes.Black;
-			//		fes.StrokeThickness = 2;
-			//		fes.Points = fesPoints;
-			//		canvas.Children.Add(fes);
-			//	}
-			//	else
-			//	{
-			//		//рисовать фиктивные элементы
-			//		if (drawDummy)
-			//		{
-			//			Polygon fes = new Polygon();
-			//			fes.Stroke = System.Windows.Media.Brushes.Gray;
-			//			fes.StrokeThickness = 1;
-			//			fes.Points = fesPoints;
-			//			canvas.Children.Add(fes);
-			//		}
-			//	}
-			//}
-
-
 		}
 	}
 }
